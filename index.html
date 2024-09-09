@@ -8,12 +8,12 @@
   </head>
   <body class="bg-[#faf4fe]">
     <div class="items-center justify-center min-h-screen">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 pb-10">
         <div class="text-center mb-9 mt-3">
           <h1 class="text-2xl font-bold text-purple-700">Get in Touch</h1>
         </div>
         <form
-          class="bg-white p-5 rounded-lg shadow-md w-2/4 mx-auto"
+          class="bg-white p-5 rounded-lg shadow-md md:w-[80%] w-full sm:w-[20%] lg:w-[60%] xl:w-[%] mx-auto"
           method="post"
         >
           <div>
@@ -56,10 +56,11 @@
               height: 15px;
               top: 2px;
               width: 15px;
-              right: 28px;
+              right: 20px;
               background-color: rgb(255, 255, 255);
               -webkit-transition: 0.4s;
               transition: 0.4s;
+              
             }
 
             input:checked + .slider {
@@ -74,6 +75,7 @@
               -webkit-transform: translateX(26px);
               -ms-transform: translateX(26px);
               transform: translateX(26px);
+              margin-right: 10px;
             }
 
             .slider.round {
@@ -86,7 +88,7 @@
           </style>
 
           <div class="flex gap-3">
-            <div class="mb-4 w-[50%]">
+            <div class="mb-4 md:w-1/2 w-full">
               <label for="first-name" class="text-black font-semibold text-sm"
                 >First Name</label
               >
@@ -131,7 +133,7 @@
               >Phone Number</label
             >
             <input
-              type="tel"
+              type="number"
               id="phone"
               class="w-full mt-2 p-2 border border-gray-395 rounded-md text-sm"
               placeholder="+1 (555) 000-0000"
@@ -187,26 +189,25 @@
           </div>
 
           <div>
-            <h1 class="text-black font-semibold text-sm mt-3">
+            <h1 class="text-black font-semibold text-sm mt-3 mb-1">
               How excited are you to start? (1-5)
             </h1>
           </div>
           <style>
-            .range-slider{
+            .range-slider {
               width: 100%;
               max-width: 600px;
               background: #000000;
             }
-            
           </style>
           <div class="color-change">
             <input
-            type="range"
-            id="excitement"
-            name="excitement"
-            min="1"
-            max="6"
-            class="range-slider"
+              type="range"
+              id="excitement"
+              name="excitement"
+              min="1"
+              max="6"
+              class="range-slider"
             />
           </div>
 
